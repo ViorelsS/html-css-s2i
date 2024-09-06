@@ -14,6 +14,16 @@ header {
     font-weight: bold;
     text-transform: uppercase;
   }
+
+  .menu-footer {
+    a {
+      display: inline-block; // Assicurati che i link siano visualizzati come blocchi inline
+    }
+
+    @include media-md {
+      display: none; // Nascondi il menu-footer sui dispositivi md e superiori
+    }
+  }
 }
 
 main {

@@ -102,8 +102,24 @@ $x-width: calc($hamburger-height * 1.41421356237);
 
   & a {
     text-decoration: none;
+    text-transform: uppercase;
     color: $primary-color;
     font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .menu-footer {
+    padding-top: 36px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    a {
+      i {
+        font-size: 36px;
+        color: lighten($primary-color, 10%);
+      }
+    }
   }
 }
 
@@ -112,7 +128,47 @@ $x-width: calc($hamburger-height * 1.41421356237);
 }
 
 @include media-md {
-  .hamburger-menu {
-    visibility: hidden;
+  .hamburger-menu,
+  .sidebar {
+    all: unset;
+  }
+
+  .hamburger-menu,
+  .menu-footer,
+  .menu-footer a,
+  .menu-footer a i,
+  input {
+    display: none;
+  }
+
+  .navigation {
+    nav {
+      width: max-content;
+      display: flex;
+      flex-direction: row;
+    }
+    &-list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 24px;
+
+      li {
+        a {
+          text-transform: uppercase;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@include media-xl {
+  .navigation-list li a {
+    font-size: 1.3rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
   }
 }
