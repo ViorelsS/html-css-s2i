@@ -1,4 +1,4 @@
-@import "_font", "_config", "_menu";
+@import "_font", "_config", "_menu", "_footer";
 
 header {
   border-bottom: 0.5px solid lighten($primary-color, 60%);
@@ -17,15 +17,15 @@ header {
 
   .menu-footer {
     a {
-      display: inline-block; // Assicurati che i link siano visualizzati come blocchi inline
+      display: inline-block;
     }
 
     @include media-md {
-      display: none; // Nascondi il menu-footer sui dispositivi md e superiori
+      display: none;
     }
   }
-}
 
-main {
-  height: 100vh;
+  .active {
+    font-weight: bold;
+  }
 }
