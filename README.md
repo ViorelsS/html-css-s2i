@@ -30,7 +30,7 @@ Per utilizzare il progetto, seguire i seguenti passaggi:
 
 ## Come visualizzare il sito
 
-Il sito é disponibile online all'indirizzo: [URL del sito](https://example.com)
+Il sito é disponibile online all'indirizzo: https://viorelss.github.io/html-css-s2i/
 
 ## Contributi
 

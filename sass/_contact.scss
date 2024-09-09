@@ -1,11 +1,16 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 95vh;
   margin: 0;
 }
 
 .contact-main {
+  display: flex;
+  flex: 1;
+}
+
+.contact-container {
   margin: 16px;
   background: lighten($secondary-color, 10%);
   width: calc(100% - 32px);
@@ -16,13 +21,27 @@ body {
   border-radius: 12px;
   box-sizing: border-box;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  gap: 20px;
+
+  .aside-img {
+    visibility: none;
+    display: none;
+  }
 
   .contact-body {
+    flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 1;
+
+    h2 {
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin-top: 0;
+    }
 
     & form {
       width: 90%;
@@ -32,7 +51,8 @@ body {
       justify-content: stretch;
 
       & .logos {
-        padding-top: 64px;
+        // padding-top: 52px;
+        padding: 64px 0 24px 0;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -40,7 +60,12 @@ body {
         gap: 32px;
 
         & img {
-          max-width: 56px;
+          max-width: 44px;
+          height: auto;
+        }
+
+        .bigger-logo {
+          max-width: 64px;
           height: auto;
         }
       }
@@ -48,8 +73,9 @@ body {
 
     & p {
       width: 100%;
-      text-align: center; // Centra il testo del paragrafo
-      margin: 16px 0; // Aggiungi margini per centrare verticalmente se necessario
+      text-align: center;
+      margin: 16px 0;
+      padding: 0 12px;
     }
 
     .form-group {
@@ -109,6 +135,25 @@ body {
       align-items: center;
       justify-content: center;
       border-width: 0.5px;
+    }
+  }
+}
+
+@include media-md {
+  .contact-container {
+    .aside-img {
+      display: flex;
+      flex: 1;
+      height: 100%;
+      overflow: hidden;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      box-shadow: -4px 0 4px rgba(0, 0, 0, 0.3);
+      img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 }
