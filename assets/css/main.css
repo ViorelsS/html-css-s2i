@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;600;700&display=swap");
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
@@ -491,6 +492,93 @@ body {
        object-fit: cover;
   }
 }
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex: 1;
+}
+.landing-page .hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.landing-page .hero-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.landing-page .animate-text {
+  font-family: monospace;
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+  line-height: 1.2;
+}
+.landing-page .animate-text .span-bg {
+  display: inline-block;
+  background: #ffe10d;
+  width: -moz-max-content;
+  width: max-content;
+}
+.landing-page .animate-text span {
+  position: relative;
+  display: inline-block;
+}
+.landing-page .animate-text span::before {
+  content: "Developer";
+  font-size: 34px;
+  color: #191919;
+  animation: words 14s infinite;
+}
+.landing-page .animate-text span::after {
+  font-size: 34px;
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: #fefefe;
+  border-left: 2px solid #191919;
+  right: -8px;
+  animation: cursor 0.8s infinite, typing 14s steps(11) infinite;
+}
+@keyframes cursor {
+  to {
+    border-left: 2px solid #fefefe;
+  }
+}
+@keyframes words {
+  0%, 20% {
+    content: "Developer";
+  }
+  21%, 40% {
+    content: "Architect";
+  }
+  41%, 60% {
+    content: "Startupper";
+  }
+  61%, 80% {
+    content: "Student";
+  }
+  81%, 100% {
+    content: "Politician";
+  }
+}
+@keyframes typing {
+  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+    width: 0;
+  }
+  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+    width: calc(100% + 7px);
+  }
+}
+
 header {
   border-bottom: 0.5px solid #b2b2b2;
   background: #fefefe;
