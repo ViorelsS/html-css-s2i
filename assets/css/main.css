@@ -349,19 +349,108 @@ footer .socials a i {
     grid-area: socials;
   }
 }
-.contact-body {
+body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: 0;
 }
 
 .contact-main {
-  margin: 8px;
-  background: #ffe10d;
-  width: calc(100% - 16px);
+  margin: 16px;
+  background: #ffe740;
+  width: calc(100% - 32px);
+  display: flex;
   flex: 1;
-  border-radius: 24px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
   box-sizing: border-box;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+.contact-main .contact-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.contact-main .contact-body form {
+  width: 90%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+.contact-main .contact-body form .logos {
+  padding-top: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.contact-main .contact-body form .logos img {
+  max-width: 56px;
+  height: auto;
+}
+.contact-main .contact-body p {
+  width: 100%;
+  text-align: center;
+  margin: 16px 0;
+}
+.contact-main .contact-body .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+  border: none;
+}
+.contact-main .contact-body .form-group label {
+  font-weight: 500;
+  color: #191919;
+}
+.contact-main .contact-body .form-group input,
+.contact-main .contact-body .form-group textarea {
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  padding: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+}
+.contact-main .contact-body .form-group input:focus,
+.contact-main .contact-body .form-group textarea:focus {
+  border-width: 0.8px;
+  border-color: #666666;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+.contact-main .contact-body .form-group textarea {
+  resize: none;
+}
+.contact-main .contact-body .form-group button {
+  width: 100%;
+  background-color: #191919;
+  border-radius: 8px;
+  color: #fefefe;
+  font-size: medium;
+  font-weight: 600;
+  padding: 16px 0;
+  border: none;
+}
+.contact-main .contact-body .form-group button:hover {
+  background-color: #333333;
+  color: #ffffff;
+  cursor: pointer;
+}
+.contact-main .contact-body .form-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-width: 0.5px;
 }
 
 header {
