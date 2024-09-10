@@ -611,7 +611,34 @@ body {
 .landing-body footer .socials i {
   color: #fefefe;
 }
+.dark .navigation-list li a,
+.landing-body .navigation-list li a {
+  color: #fefefe;
+}
 
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: red;
+  white-space: nowrap;
+}
+.logos .logos-slide {
+  display: inline-block;
+  animation: 10s slide infinite linear;
+}
+.logos .logos-slide img {
+  height: 100px;
+  margin: 0 30px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 header {
   border-bottom: 0.5px solid #b2b2b2;
   background: #fefefe;
