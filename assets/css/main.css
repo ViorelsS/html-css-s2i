@@ -553,6 +553,26 @@ body {
 .landing-body .landing-main .hero-container .profile p {
   font-weight: 600;
 }
+.dark .landing-main .hero-container a,
+.landing-body .landing-main .hero-container a {
+  width: 100%;
+}
+.dark .landing-main .hero-container a button,
+.landing-body .landing-main .hero-container a button {
+  background-color: #fefefe;
+  border-radius: 8px;
+  color: #191919;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 16px 32px;
+  border: none;
+}
+.dark .landing-main .hero-container a button:hover,
+.landing-body .landing-main .hero-container a button:hover {
+  background-color: #f1f1f1;
+  color: #000;
+  cursor: pointer;
+}
 .dark .landing-main .light,
 .landing-body .landing-main .light {
   background: #fefefe;

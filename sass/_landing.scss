@@ -59,6 +59,25 @@ $img-sizes: 150px;
           font-weight: 600;
         }
       }
+
+      & a {
+        width: 100%;
+
+        & button {
+          background-color: $soft-white;
+          border-radius: 8px;
+          color: $primary-color;
+          font-size: 20px;
+          font-weight: 600;
+          padding: 16px 32px;
+          border: none;
+          &:hover {
+            background-color: darken($soft-white, 5%);
+            color: #000;
+            cursor: pointer;
+          }
+        }
+      }
     }
 
     & .light {
