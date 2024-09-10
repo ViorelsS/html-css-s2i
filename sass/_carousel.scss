@@ -3,10 +3,7 @@
   padding: 20px 0;
   white-space: nowrap;
   position: relative;
-
-  & p {
-    color: white;
-  }
+  background: $soft-white;
 
   & .tech-slide {
     display: inline-block;
@@ -26,13 +23,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 120px;
+    width: 250px;
     height: 100%;
-    background: linear-gradient(
-      to left,
-      rgba(255, 255, 255, 0),
-      $primary-color
-    );
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), $soft-white);
     content: "";
     z-index: 2;
   }
@@ -43,11 +36,7 @@
     right: 0;
     width: 120px;
     height: 100%;
-    background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0),
-      $primary-color
-    );
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), $soft-white);
     content: "";
     z-index: 2;
   }

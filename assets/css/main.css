@@ -651,9 +651,7 @@ body {
   padding: 20px 0;
   white-space: nowrap;
   position: relative;
-}
-.tech p {
-  color: white;
+  background: #fefefe;
 }
 .tech .tech-slide {
   display: inline-block;
@@ -670,9 +668,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 120px;
+  width: 250px;
   height: 100%;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), #191919);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #fefefe);
   content: "";
   z-index: 2;
 }
@@ -682,7 +680,7 @@ body {
   right: 0;
   width: 120px;
   height: 100%;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), #191919);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #fefefe);
   content: "";
   z-index: 2;
 }
