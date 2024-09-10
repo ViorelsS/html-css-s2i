@@ -58,6 +58,11 @@ $img-sizes: 150px;
         & p {
           font-weight: 600;
         }
+
+        @include media-md {
+          width: 60vw;
+          margin: 0 auto;
+        }
       }
 
       & a {
@@ -123,5 +128,33 @@ $img-sizes: 150px;
 
   .navigation-list li a {
     color: $soft-white;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .light {
+    background-color: $soft-white;
+  }
+
+  .light .content {
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+  }
+
+  .light .content h2 {
+    text-align: center;
+  }
+
+  .stack-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .light .content {
+    width: 40%;
   }
 }
