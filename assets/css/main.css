@@ -399,8 +399,12 @@ body {
   flex-direction: column;
   justify-content: stretch;
 }
+.contact-container .contact-body form .trusted-by {
+  padding-top: 12px;
+  font-weight: 600;
+}
 .contact-container .contact-body form .logos {
-  padding: 64px 0 24px 0;
+  padding: 52px 0 24px 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
