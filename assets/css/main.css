@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
@@ -499,24 +500,22 @@ body {
 .landing-body {
   height: 100%;
   margin: 0;
+  font-family: "Poppins", sans-serif;
   background: linear-gradient(to bottom right, #2d2d2d, #0d0d0d);
 }
 .dark .landing-main,
 .landing-body .landing-main {
   display: flex;
-  height: 100%;
-  padding: 8px;
+  flex-direction: column;
 }
 .dark .landing-main .hero-container,
 .landing-body .landing-main .hero-container {
-  padding-top: 16px;
-  height: 100%;
-  flex-grow: 1;
-  flex-basis: 0;
+  padding-top: 24px;
+  height: 70vh;
   color: #fefefe;
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
@@ -524,6 +523,7 @@ body {
 .landing-body .landing-main .hero-container h1,
 .landing-body .landing-main .hero-container div {
   text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
 }
 .dark .landing-main .hero-container h1, .dark .landing-main .hero-container span,
 .landing-body .landing-main .hero-container h1,
@@ -552,6 +552,22 @@ body {
 .dark .landing-main .hero-container .profile p,
 .landing-body .landing-main .hero-container .profile p {
   font-weight: 600;
+}
+.dark .landing-main .light,
+.landing-body .landing-main .light {
+  background: #fefefe;
+  padding: 8px;
+  flex-grow: 1;
+  color: #4c4c4c;
+}
+.dark .landing-main .light h2,
+.landing-body .landing-main .light h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.dark .landing-main .light p,
+.landing-body .landing-main .light p {
+  font-family: "Poppins", sans-serif;
 }
 .dark header,
 .landing-body header {
