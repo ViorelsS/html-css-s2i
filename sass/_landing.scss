@@ -1,11 +1,27 @@
 $image-size: 150px;
 
+.landing-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.landing-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
 .landing-page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  align-items: center;
   flex: 1;
+  height: 100%;
+  width: 100%;
+  padding: 8px;
+  background: $secondary-color;
 
   .hero-image {
     display: flex;
@@ -29,10 +45,10 @@ $image-size: 150px;
     font-weight: 600;
     min-width: 280px;
     line-height: 1.2;
+    position: relative;
 
     & .span-bg {
       display: inline-block;
-      background: $secondary-color;
       width: max-content;
     }
 
@@ -40,13 +56,14 @@ $image-size: 150px;
       position: relative;
       display: inline-block;
       font-family: monospace;
+      white-space: nowrap;
     }
     & span::before {
-      content: "Developer";
+      content: "Developer\00A0";
       font-family: monospace;
-      //   font-size: 34px;
-      color: $primary-color;
-      animation: words 14s infinite;
+      font-size: 34px;
+      color: $jacket-blue;
+      animation: words 12s infinite;
     }
 
     & span::after {
@@ -54,29 +71,30 @@ $image-size: 150px;
       font-family: monospace;
       content: "";
       position: absolute;
-      width: calc(100% + 8px);
+      width: 100%;
+      z-index: 1;
       height: 100%;
-      background-color: $soft-white;
-      border-left: 2px solid $primary-color;
-      right: -8px;
-      animation: cursor 0.8s infinite, typing 14s steps(11) infinite;
+      background-color: $secondary-color;
+      border-left: 2px solid $sea-green;
+      right: 0px;
+      animation: cursor 0.8s infinite, typing 12s steps(13) infinite;
     }
 
     @keyframes cursor {
       to {
-        border-left: 2px solid $soft-white;
+        border-left: 8px solid $sea-green;
       }
     }
 
     @keyframes words {
       0%,
       20% {
-        content: "Developer";
+        content: "Developer\00A0";
       }
 
       21%,
       40% {
-        content: "Architect";
+        content: "Engineer\00A0\00A0";
       }
 
       41%,
@@ -86,7 +104,7 @@ $image-size: 150px;
 
       61%,
       80% {
-        content: "Student";
+        content: "Student\00A0\00A0\00A0";
       }
 
       81%,
@@ -118,8 +136,29 @@ $image-size: 150px;
       65%,
       80%,
       85% {
-        width: calc(100% + 7px);
+        width: calc(100% + 8px);
       }
     }
+  }
+
+  & button {
+    width: 100%;
+    background-color: $primary-color;
+    border-radius: 8px;
+    color: $soft-white;
+    font-size: medium;
+    font-weight: 600;
+    padding: 16px 0;
+    border: none;
+    &:hover {
+      background-color: lighten($primary-color, 10%);
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+
+  & a {
+    text-decoration: none;
+    color: $soft-white;
   }
 }

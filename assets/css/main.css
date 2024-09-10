@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;600;700&display=swap");
+@charset "UTF-8";
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
@@ -492,12 +492,28 @@ body {
        object-fit: cover;
   }
 }
+.landing-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.landing-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
 .landing-page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  align-items: center;
   flex: 1;
+  height: 100%;
+  width: 100%;
+  padding: 8px;
+  background: #ffe10d;
 }
 .landing-page .hero-image {
   display: flex;
@@ -520,51 +536,56 @@ body {
   font-weight: 600;
   min-width: 280px;
   line-height: 1.2;
+  position: relative;
 }
 .landing-page .animate-text .span-bg {
   display: inline-block;
-  background: #ffe10d;
   width: -moz-max-content;
   width: max-content;
 }
 .landing-page .animate-text span {
   position: relative;
   display: inline-block;
+  font-family: monospace;
+  white-space: nowrap;
 }
 .landing-page .animate-text span::before {
-  content: "Developer";
+  content: "Developer ";
+  font-family: monospace;
   font-size: 34px;
-  color: #191919;
-  animation: words 14s infinite;
+  color: #1d335e;
+  animation: words 12s infinite;
 }
 .landing-page .animate-text span::after {
   font-size: 34px;
+  font-family: monospace;
   content: "";
   position: absolute;
-  width: calc(100% + 8px);
+  width: 100%;
+  z-index: 1;
   height: 100%;
-  background-color: #fefefe;
-  border-left: 2px solid #191919;
-  right: -8px;
-  animation: cursor 0.8s infinite, typing 14s steps(11) infinite;
+  background-color: #ffe10d;
+  border-left: 2px solid #5b8c5a;
+  right: 0px;
+  animation: cursor 0.8s infinite, typing 12s steps(13) infinite;
 }
 @keyframes cursor {
   to {
-    border-left: 2px solid #fefefe;
+    border-left: 8px solid #5b8c5a;
   }
 }
 @keyframes words {
   0%, 20% {
-    content: "Developer";
+    content: "Developer ";
   }
   21%, 40% {
-    content: "Architect";
+    content: "Engineer  ";
   }
   41%, 60% {
     content: "Startupper";
   }
   61%, 80% {
-    content: "Student";
+    content: "Student   ";
   }
   81%, 100% {
     content: "Politician";
@@ -575,8 +596,27 @@ body {
     width: 0;
   }
   5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
-    width: calc(100% + 7px);
+    width: calc(100% + 8px);
   }
+}
+.landing-page button {
+  width: 100%;
+  background-color: #191919;
+  border-radius: 8px;
+  color: #fefefe;
+  font-size: medium;
+  font-weight: 600;
+  padding: 16px 0;
+  border: none;
+}
+.landing-page button:hover {
+  background-color: #333333;
+  color: #ffffff;
+  cursor: pointer;
+}
+.landing-page a {
+  text-decoration: none;
+  color: #fefefe;
 }
 
 header {
