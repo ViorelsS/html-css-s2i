@@ -705,141 +705,122 @@ body {
 .cv-main {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  color: white;
+  margin: 20px auto;
+  width: 80%;
+  gap: 16px;
+  color: #4c4c4c;
 }
-@media screen and (min-width: 1024px) {
-  .cv-main {
-    flex-direction: row;
-    margin: auto;
-  }
-}
-.cv-main .left-side {
+.cv-main .profile {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #191919;
-  padding: 20px;
-  flex: 1;
+  gap: 16px;
 }
-.cv-main .left-side .profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.cv-main .profile img {
+  width: 80px;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 10%;
 }
-.cv-main .left-side .profile img {
-  width: 150px;
-  height: auto;
-  border-radius: 50%;
-  border: 2px solid #ffe10d;
-  overflow: hidden;
-}
-.cv-main .left-side .profile .name {
-  font-weight: 600;
-  color: #fefefe;
-}
-.cv-main .left-side .profile .profession {
-  font-weight: 400;
-  color: white;
-  text-transform: uppercase;
-}
-.cv-main .left-side .profile .profession em {
-  color: #ffe10d;
-  font-style: normal;
-}
-.cv-main .left-side hr {
-  width: 100%;
-  border: none;
-  border-top: 1px solid #ffe740;
-}
-.cv-main .left-side .education {
-  color: white;
-}
-.cv-main .left-side .education-item {
-  margin-top: 28px;
-}
-.cv-main .left-side .education-item .course-name {
-  font-weight: 600;
-  font-size: 12px;
-  color: #ffe10d;
-  line-height: 1.2;
-}
-@media screen and (max-width: 768px) {
-  .cv-main .left-side .education-item .course-name {
-    white-space: normal;
-    word-break: break-word;
-  }
-}
-.cv-main .left-side .education-item .university-name {
-  font-weight: 600;
-  font-size: 12px;
-  color: #fffad9;
-}
-.cv-main .left-side .education .title {
-  display: flex;
-  justify-content: start;
-  color: white;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.cv-main .left-side .education ul {
-  list-style: none;
-}
-.cv-main .left-side .education ul li {
-  font-size: 14px;
-  font-style: italic;
-}
-.cv-main .right-side {
-  background: #ffea5a;
-  color: #191919;
-  padding: 20px;
-  flex: 2;
-}
-.cv-main .right-side .professional {
-  padding: 30px;
-}
-.cv-main .right-side .professional .title {
-  font-size: x-large;
-  font-weight: 700;
-  color: #333333;
-}
-.cv-main .right-side .professional-item {
-  padding-bottom: 24px;
-}
-.cv-main .right-side .professional-item p {
-  line-height: 1.2;
-}
-.cv-main .right-side .professional-item .location-info {
-  display: flex;
-  flex-direction: row;
-  gap: 4px;
-  font-size: small;
-}
-.cv-main .right-side .professional-item .location-info p {
-  font-size: small;
-}
-.cv-main .right-side .professional-item .company-name {
-  font-size: small;
-  padding-bottom: 4px;
-}
-.cv-main .right-side .professional-item .skills p {
-  font-weight: 600;
-  color: gray;
-}
-.cv-main .right-side .professional-item .skills ul {
-  list-style: none;
-}
-.cv-main .right-side .professional-item .skills ul li {
-  font-style: italic;
-  color: #191919;
-}
-.cv-main .right-side .professional-name {
-  color: #191919;
+.cv-main .profile h1, .cv-main .profile h2 {
   font-weight: 500;
 }
-
-.btn {
+.cv-main .profile h1 {
+  font-size: 20px;
+  line-height: 0.4rem;
+}
+.cv-main .profile h2 {
+  font-size: 16px;
+  line-height: 0.6rem;
+}
+.cv-main .profile .location {
+  color: #7f7f7f;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.cv-main .profile .location p {
+  font-weight: 500;
+}
+@media screen and (max-width: 375px) {
+  .cv-main .profile h1 {
+    font-size: 16px;
+    line-height: 1.2rem;
+  }
+  .cv-main .profile h2 {
+    font-size: 14px;
+  }
+}
+.cv-main .languages,
+.cv-main .technologies {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .cv-main .languages,
+  .cv-main .technologies {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .cv-main .languages,
+  .cv-main .technologies {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+.cv-main .languages div,
+.cv-main .technologies div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 14px 12px;
+  height: 100%;
+}
+.cv-main .languages div img,
+.cv-main .technologies div img {
+  width: 40px;
+  height: auto;
+}
+.cv-main .languages div p,
+.cv-main .technologies div p {
+  font-size: 12px;
+}
+.cv-main .experience {
+  width: 100%;
+}
+.cv-main .experience p, .cv-main .experience span {
+  font-size: 14px;
+  line-height: 0.4rem;
+}
+.cv-main .experience p {
+  font-weight: 600;
+}
+.cv-main .experience .experience-description {
+  margin-top: 8px;
+  display: block;
+  line-height: 1.1rem;
+}
+.cv-main .experience-title {
+  background: #ffe10d;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 8px 4px;
+  border-radius: 4px;
+}
+.cv-main .experience-location {
+  background: #7f7f7f;
+  color: #fefefe;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 8px 4px;
+  border-radius: 4px;
+}
+.cv-main .btn {
+  text-align: center;
   width: 100%;
   background-color: #191919;
   border-radius: 8px;
@@ -848,13 +829,19 @@ body {
   font-weight: 600;
   padding: 16px 0;
   border: none;
+  text-decoration: none;
 }
-.btn:hover {
+.cv-main .btn:hover {
   background-color: #333333;
   color: #ffffff;
   cursor: pointer;
 }
 
+@media screen and (min-width: 1024px) {
+  .cv-main {
+    width: 40%;
+  }
+}
 header {
   border-bottom: 0.5px solid #b2b2b2;
   background: #fefefe;
