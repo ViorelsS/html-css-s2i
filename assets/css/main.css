@@ -623,6 +623,11 @@ body {
   color: #fefefe;
 }
 
+@media screen and (max-width: 760px) {
+  .landing-body .sidebar nav .navigation-list li a {
+    color: #191919;
+  }
+}
 @media screen and (min-width: 600px) {
   .light {
     background-color: #fefefe;

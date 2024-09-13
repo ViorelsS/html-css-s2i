@@ -131,6 +131,12 @@ $img-sizes: 150px;
   }
 }
 
+@media screen and (max-width: 760px) {
+  .landing-body .sidebar nav .navigation-list li a {
+    color: $primary-color;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .light {
     background-color: $soft-white;
