@@ -635,6 +635,7 @@ body {
   gap: 16px;
 }
 .content a .btn {
+  text-decoration: none;
   background-color: #191919;
   border-radius: 8px;
   color: #fefefe;

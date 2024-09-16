@@ -141,6 +141,7 @@ $img-sizes: 150px;
     flex-direction: row;
     gap: 16px;
     .btn {
+      text-decoration: none;
       background-color: $primary-color;
       border-radius: 8px;
       color: $soft-white;
