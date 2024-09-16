@@ -4,7 +4,7 @@
 
 Here you'll find the source code for a modern and responsive website I developed using **HTML** and **CSS**, with a bit of magic from the **Sass** CSS preprocessor. 
 
-![Website Preview](https://via.placeholder.com/800x400)  
+![Website Preview](./assets/img/preview/landing.png)  
 *Above: A preview of the project in action!*
 
 ---
@@ -52,8 +52,6 @@ This project is all about building a clean, modern, and mobile-first website. I 
 You can check out the live version of the project here:  
 [**Live Website**](https://viorelss.github.io/html-css-s2i/)  
 
-![Live Website](https://via.placeholder.com/800x400)  
-*Above: Click to view the site live!*
 
 ---
 
