@@ -65,8 +65,6 @@ Contributions are always welcome! Feel free to report any bugs or suggest improv
 3. Commit your changes.  
 4. Open a pull request.  
 
-![GitHub Logo](https://via.placeholder.com/150x50)  
-*Join the GitHub fun!*
 
 ---
 
