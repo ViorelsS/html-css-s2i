@@ -721,8 +721,8 @@ body {
 }
 .cv-main .profile img {
   width: 80px;
-  height: -moz-max-content;
-  height: max-content;
+  height: -moz-min-content;
+  height: min-content;
   border-radius: 10%;
 }
 .cv-main .profile h1, .cv-main .profile h2 {
