@@ -851,6 +851,38 @@ body {
     width: 40%;
   }
 }
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.bg-white {
+  display: flex;
+  height: 100%;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.bg-white .card {
+  padding: 32px;
+  text-align: center;
+  background: #ffe10d;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+.bg-white .card h1 {
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.bg-white .card h2 {
+  font-size: 20px;
+}
+.bg-white .card a {
+  padding-top: 20px;
+  color: #191919;
+  text-decoration: none;
+}
+
 header {
   border-bottom: 0.5px solid #b2b2b2;
   background: #fefefe;
