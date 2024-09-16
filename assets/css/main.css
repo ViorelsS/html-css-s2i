@@ -820,6 +820,10 @@ body {
 .cv-main .experience .experience-location {
   line-height: normal;
 }
+.cv-main .experience .experience-location a {
+  text-decoration: none;
+  color: #fefefe;
+}
 .cv-main .experience-location {
   background: #7f7f7f;
   color: #fefefe;
