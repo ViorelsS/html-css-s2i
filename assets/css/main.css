@@ -623,6 +623,32 @@ body {
   color: #fefefe;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.content a .btn {
+  background-color: #191919;
+  border-radius: 8px;
+  color: #fefefe;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 16px 32px;
+  border: none;
+}
+.content a .btn:hover {
+  background-color: #333333;
+  color: #fefefe;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 760px) {
   .landing-body .sidebar nav .navigation-list li a {
     color: #191919;
@@ -862,6 +888,7 @@ body {
 }
 
 .bg-white {
+  z-index: 0;
   display: flex;
   height: 100%;
   padding: 8px;
@@ -887,6 +914,11 @@ body {
   text-decoration: none;
 }
 
+.thanks-header .logo a {
+  text-decoration: none;
+  color: #191919;
+}
+
 header {
   border-bottom: 0.5px solid #b2b2b2;
   background: #fefefe;
@@ -897,6 +929,10 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
+}
+header a {
+  text-decoration: none;
+  color: #191919;
 }
 header .logo {
   font-weight: bold;

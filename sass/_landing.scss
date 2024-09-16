@@ -130,6 +130,32 @@ $img-sizes: 150px;
     color: $soft-white;
   }
 }
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    .btn {
+      background-color: $primary-color;
+      border-radius: 8px;
+      color: $soft-white;
+      font-size: 20px;
+      font-weight: 400;
+      padding: 16px 32px;
+      border: none;
+      &:hover {
+        background-color: lighten($primary-color, 10%);
+        color: $soft-white;
+        cursor: pointer;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 760px) {
   .landing-body .sidebar nav .navigation-list li a {
