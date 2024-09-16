@@ -12,7 +12,8 @@
 
     & img {
       width: 80px;
-      height: min-content;
+      height: auto;
+      object-fit: cover;
       border-radius: 10%;
     }
 
@@ -115,6 +116,10 @@
       max-width: max-content;
       padding: 8px 4px;
       border-radius: 4px;
+    }
+
+    & .experience-location {
+      line-height: normal;
     }
 
     &-location {

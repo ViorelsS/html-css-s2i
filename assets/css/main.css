@@ -721,8 +721,9 @@ body {
 }
 .cv-main .profile img {
   width: 80px;
-  height: -moz-min-content;
-  height: min-content;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10%;
 }
 .cv-main .profile h1, .cv-main .profile h2 {
@@ -815,6 +816,9 @@ body {
   max-width: max-content;
   padding: 8px 4px;
   border-radius: 4px;
+}
+.cv-main .experience .experience-location {
+  line-height: normal;
 }
 .cv-main .experience-location {
   background: #7f7f7f;
